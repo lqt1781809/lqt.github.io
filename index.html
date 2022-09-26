@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style>
+		body{
+			/* border: 1px solid mediumseagreen; */
+			/* color: aqua; */
+			/* background: url(img/88656b7f5f5f4bfda9e70a8c49352ab4.gif) no-repeat; */
+			/* background-size: cover; */
+			background-color:rgb(13,30,78);
+			/* margin-top:0px auto; */
+			/* margin: auto; */
+			display: flex;
+			/* flex-direction: column; */
+		}
+		.box0{
+			margin: 50px auto;
+		   /* width: 1280px; */
+		   /* height: 800px; */
+		   /* margin: 0px auto; */
+		   /* border: 1px solid red; */
+		   display: flex;
+		   flex-direction: column;
+		   /* flex-direction: row; */
+		   /* flex-basis: 1; */
+		   /* flex-wrap:wrap */
+		   /* float: left; */
+		}
+		#box1{
+			/* width: 330px; 
+			height:40px; */
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			 margin: 8px auto;
+			/* margin: 0px auto; */
+			/* color:cornsilk; */
+			text-align: center;
+			/* size: 72; */
+			display: flex;
+			/* flex-direction: row; */
+			/* flex-wrap:wrap */
+		}
+		#box2,#box3{
+			/* width: 330px; 
+			height:40px; */
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			 /* margin: 8px auto; */
+			margin:auto;
+			/* color:cornsilk; */
+			/* text-align: center; */
+			/* size: 72; */
+			display: flex;
+			
+			/* flex-direction: row; */
+			/* flex-wrap:wrap */
+		}
+	/* 		
+		#box2{
+			width: 1700px;
+			height:300px;
+			flex-basis: 1;
+			border: 1px solid fuchsia;
+			margin: 10px;
+			margin: 0px auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap:wrap
+		}
+		#box3{
+			width: 1700px; 
+			height: 550px;
+			flex-basis: 1;
+			border: 1px solid fuchsia;
+			margin: 10px;
+			margin: 0px auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap:wrap
+			
+		} */
+		
+		#a1,#a3{
+			/* width: 400px;
+			height:250px; */
+			flex-basis: 1;
+			/* border: 1px solid forestgreen; */
+			/* margin: 10px; */
+			display: flex;
+			margin-right:20px ;
+			flex-direction: column;
+			/* flex-wrap:wrap */
+		}
+		#a4,#a5{
+			width: 140px;
+			height:250px;
+			margin-right:50px ;
+			flex-basis: 1;
+			/* border: 1px solid forestgreen; */
+			display: flex;
+			/* margin: 10px; */
+			flex-direction: column;
+			/* flex-wrap:wrap */
+		}
+		#a6,#a8,#a9,#a10,#a11{
+			/* width: 400px;
+			height:250px; */
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			display: flex;
+			flex-direction: column;
+			/* flex-wrap:wrap */
+		}
+		#a2{
+			/* width: 810px; 
+			height:250px; */
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			margin-right:50px ;
+			display: flex;
+			flex-direction: column;
+			/* flex-wrap:wrap */
+			
+		}
+		#a7{
+			/* width: 400px;
+			height:500px; */
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			display: flex;
+			flex-direction: column;
+			/* flex-wrap:wrap */
+		}
+		
+		#box31{
+			float: left;
+			/* width: 400px; */
+			height:500px;
+			flex-basis: 1;
+			display: flex;
+			flex-direction: column;
+			/* margin-right:50px ; */
+		}
+		#box311,#box321,#box322,#box331{
+			float: left;
+			/* width: 400px; */
+			height:500px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+		#box321,#box322{
+			float: left;
+			color: aliceblue;
+			/* border-style: solid; */
+			display: flex;
+			margin-right:50px ;
+		}
+		#box31{
+			/* border: 0.3px solid hotpink; */
+			flex-direction: row;
+			display: flex;
+		}
+		#box32{
+			/* border: 0.3px solid gold; */
+			display: flex;
+		}
+		#demo1,#demo3,#demo6,#demo10,#demo11{
+			width: 340px;
+			height:33px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			/* float: left; */
+			/* border-style: solid; */
+			background:linear-gradient(to right,#003068,#cbc4ff) ;
+			
+		}
+		#demo7,#demo8,#demo9{
+			width: 380px;
+			height:33px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			/* float: left; */
+			/* border-style: solid; */
+			background:linear-gradient(to right,#003068,#cbc4ff) ;
+			
+		}
+		#demo2{
+			width: 840px;
+			height:33px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			/* float: left; */
+			/* border-style: solid; */
+			/* border: 0.3px solid red; */
+			background:linear-gradient(to right,#003068,#cbc4ff) ;
+		}
+		#demo4,#demo5{
+			width: 150px;
+			height:10px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+			/* margin: 10px; */
+			/* float: left; */
+			/* border-style: solid; */
+			/* border: 0.3px solid red; */
+			background:linear-gradient(to right,#003068,#cbc4ff) ;
+		}
+		#demoChart{
+			height:60px;
+			flex-basis: 1;
+			
+			/* border: 1px solid red; */
+		}
+		#demoChart1,#demoChart3,#demoChart6,#demoChart10,#demoChart11{
+			width: 380px;
+			height:200px;
+			flex-basis: 1;
+			/* border: 1px solid red; */
+		}
+		#demoChart8,#demoChart9{
+			width: 380px;
+			height:200px;
+			flex-basis: 1;
+			
+			/* border: 1px solid red; */
+		}
+		table{
+			width: 380px;
+			height:410px;
+		}
+		#demoChart7{
+		    width: 380px;
+		    height:480px;
+		    flex-basis: 1;
+		    /* border: 1px solid red; */
+			
+		}
+		#demoChart2{
+		    width: 840px;
+		    height:200px;
+		    flex-basis: 1;
+		    /* border: 1px solid red; */
+			
+		}
+		#demoChart4,#demoChart5{
+		    width:150px;
+		    height:100px;
+		    flex-basis: 1;
+		    /* border: 1px solid red; */
+			
+		}
+		
+		
+		
+/* 		#box0{
+			background-image: url(/img/88656b7f5f5f4bfda9e70a8c49352ab4.gif);
+		} */
+		
+		
+		
+		</style>
+	</head>
+	<body style="flex-grow: 1; flex-shrink: 1;">
+		<div class="box0" style="flex-grow: 1; flex-shrink: 1;" >
+			<div id="box1" style="flex-grow: 1; flex-shrink: 1;" >
+				<div id="demoChart" style="flex-grow: 1; flex-shrink: 1;">
+					<font size="6 " color="aliceblue">云计算服务监控</font></div>
+				</div>
+			<div id="box2" style="flex-grow: 1; flex-shrink: 1;">
+				<div id="a1" style="flex-grow: 1; flex-shrink: 1;">
+					<div id="demo1" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">任务总量</font></div>
+					<div id="demoChart1" style="flex-grow: 1; flex-shrink: 1;" ></div>
+				</div>
+				<div id="a2"style="flex-grow: 2; flex-shrink: 1;">
+					<div id="demo2" style="flex-grow: 2; flex-shrink: 1;"><font size="5" color="aliceblue">云计算任务趋势</font></div>
+				    <div id="demoChart2" style="flex-grow: 2; flex-shrink: 1;"></div>
+				</div>
+				<div id="a3" style="flex-grow: 1; flex-shrink: 1;">
+					<div id="demo3" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">云计算总资源</font></div>
+				    <div id="demoChart3" style="flex-grow: 1; flex-shrink: 1;"></div>
+				</div>
+				
+			</div>
+			<div id="box3" style="flex-grow: 1; flex-shrink: 1;">
+				<div id="box311"style="flex-grow: 1; flex-shrink: 1;" >
+					
+					<div id="box31" style="flex-grow: 1; flex-shrink: 1;">
+						<div id="a4" style="flex-grow: 1; flex-shrink: 1;">
+							<div id="demo4" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">任务计算</font></div>
+							<div id="demoChart4" style="flex-grow: 5; flex-shrink: 1;"></div>
+						</div>
+						<div id="a5"style="flex-grow: 1; flex-shrink: 1;">
+							<div id="demo5" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">任务成功</font></div>
+							<div id="demoChart5"style="flex-grow: 5; flex-shrink: 1;"></div>
+						</div>
+					
+					</div>
+					<div id="box32" style="flex-grow: 1; flex-shrink: 1;">
+						<div id="a6"style="flex-grow: 1; flex-shrink: 1;">
+							<div id="demo6" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">任务成功率</font></div>
+							<div id="demoChart6"style="flex-grow: 1; flex-shrink: 1;"></div>
+						</div>
+						
+					</div>
+				</div>
+					<div id="box321"style="flex-grow: 1; flex-shrink: 1;">
+						<div id="a7"style="flex-grow: 2; flex-shrink: 1;">
+							<div id="demo7" style="flex-grow: 2; flex-shrink: 1;"><font size="5" color="aliceblue">任务管理</font></div>
+							<div id="demoChart7"style="flex-grow: 2; flex-shrink: 1;">
+							<table border="1" cellspacing="0" bordercolor="#4160e9" style="flex-grow: 6; flex-shrink: 1;" >
+							<tr>
+								<th>类型</th>
+								<th>已应用</th>
+							</tr>
+							<tr>
+								<td>ASGVSA</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>DFDFBS54</td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td>QAFDC3V</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>DB43YTVFB</td>
+								<td>189</td>
+							</tr>
+							<tr>
+								<td>RTHN546FD</td>
+								<td>325</td>
+							</tr>
+							<tr>
+								<td>FG436VDF43</td>
+								<td>124</td>
+							</tr>
+							<tr>
+								<td>HGN68436BV</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>TRHJ56874B</td>
+								<td>64</td>
+							</tr>
+							
+							</table>
+						</div>
+						</div>
+						
+					</div>
+					<div id="box322" style="flex-grow: 1; flex-shrink: 1;">
+						<div id="a8"style="flex-grow: 1; flex-shrink: 1;">
+							<div id="demo8" style="flex-grow: 1; flex-shrink: 1;" ><font size="5" color="aliceblue">平均容量</font></div>
+							<div id="demoChart8" style="flex-grow: 5; flex-shrink: 1;"></div>
+						</div>
+						<div id="a9" style="flex-grow: 1; flex-shrink: 1;">
+							<div id="demo9" style="flex-grow: 1; flex-shrink: 1;" ><font size="5" color="aliceblue">存储容量</font></div>
+							<div id="demoChart9"style="flex-grow: 5; flex-shrink: 1;" ></div>
+						</div>
+						
+					</div>
+				<div id="box331"style="flex-grow: 1; flex-shrink: 1;" >
+					<div id="a10" style="flex-grow: 1; flex-shrink: 1;">
+						<div id="demo10" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">CPU利用率</font></div>
+						<div id="demoChart10" style="flex-grow: 5; flex-shrink: 1;"></div>
+					</div>
+					<div id="a11"style="flex-grow: 1; flex-shrink: 1;">
+						<div id="demo11" style="flex-grow: 1; flex-shrink: 1;"><font size="5" color="aliceblue">任务总量</font></div>
+						<div id="demoChart11"style="flex-grow: 5; flex-shrink: 1;" ></div>
+					</div>
+					
+				</div>	
+			</div>
+		</div>
+		
+		<script src="./echarts.js"></script>
+		<script>
+			let demoObj1 = document.getElementById("demoChart1")
+			let demoChart1 = echarts.init(demoObj1)
+			let option1 = {
+				// title:{
+				// 	text:"任务总量",
+				// 	},
+			xAxis: {
+			    type: "category",
+			    data: ["2016-Q4", "2017-Q1", "2017-Q2", "2017-Q3"],
+				boundaryGap: false,
+				axisLabel:{
+					textStyle:{
+						color:'white'
+					}
+				},
+				axisLine:{
+					lineStyle:{
+						color:'rgb(23,41,87)'
+					}
+				},
+				axisTick:{
+					show:false
+				},
+			},
+			yAxis: {
+			    type: "value",
+				axisLine:{
+					lineStyle:{
+						color:'white'
+					}
+				},
+				splitLine:{
+					lineStyle:{
+						color:'rgb(23,41,87)'
+					}
+					
+				}
+			},
+			
+			series: [
+			    {
+			        type: "line",
+					showSymbol: false,
+			        data: [538,555, 1200, 50],
+			        smooth: true,
+					areaStyle: {
+					        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+					          {
+					            offset: 0,
+					            color: 'rgba(65, 96, 233, 0.8)'
+					          },
+					          {
+					            offset: 1,
+					            color: 'rgba(222, 225, 233, 0)'
+					          }
+					        ])
+					      },
+			    }
+			    ,{
+			        type: "line",
+					showSymbol: false,
+			        data: [900, 1350, 530, 1800],
+			        smooth: true,
+					areaStyle: {
+					        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+					          {
+					            offset: 0,
+					            color: 'rgba(1, 230, 233, 0.8)'
+					          },
+					          {
+					            offset: 1,
+					            color: 'rgba(230, 233, 233, 0)'
+					          }
+					        ])
+					      },
+			    }
+			],
+			}
+			demoChart1.setOption(option1)
+		</script>
+		<script>
+			let demoObj2 = document.getElementById("demoChart2")
+			let demoChart2 = echarts.init(demoObj2)
+			let option2 = {
+				// title:{
+				// 	text:"云计算任务趋势",
+				// 	},
+				xAxis: {
+				    type: "category",
+				    data: ["01/01","02/01","03/01","04/01","05/01","06/01","07/01","08/01","09/01","10/01","11/01","12/01"],
+					axisLabel:{
+						textStyle:{
+							color:'white'
+						}
+					},
+					axisLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+					},
+					axisTick:{
+						show:false
+					},
+					// boundaryGap: false
+				},
+				yAxis: {
+				    type: "value",
+					axisLine:{
+						lineStyle:{
+							color:'white'
+						}
+					},
+					splitLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+						
+					}
+				},
+				grid:{
+					left:'0%',
+					right:'0%',
+					bottom:'17%',
+					containLabel:true
+				},
+				series: [
+				    {
+				        type: "line",
+						showSymbol: false,
+						
+				        data: [1950,1200, 2100,3533,1870,2624,1454,2889,3662,2541,1431,3770],
+				        lineStyle: {
+				                color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+				                  {
+				                    offset: 0,
+				                    color: 'rgba(61, 31, 151, 0.8)'
+				                  },
+				                  {
+				                    offset: 1,
+				                    color: 'rgba(63, 233, 214, 0.7)'
+				                  }
+				                ])
+				              },
+					
+				    }
+				    ,{
+				        type: "bar",
+				        data: [1750,1100, 1900,3333,1670,2424,1254,2689,3462,2341,1231,3570],
+						itemStyle: {
+						        color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+						          {
+						            offset: 0,
+						            color: 'rgba(96, 130, 255, 0.8)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(63, 233, 214, 0.7)'
+						          }
+						        ])
+						      },
+				       
+				    }
+				],
+			}
+			demoChart2.setOption(option2)
+		</script>
+		<script>
+			let demoObj3 = document.getElementById("demoChart3")
+			let demoChart3 = echarts.init(demoObj3)
+			let option3 = {
+				// title:{
+				// 		text:"云计算总资源",
+				// 		},
+				xAxis: {
+				    type: "category",
+				    data: ["Z1", "Z2", "Z3", "Z4","Z5", "Z6"],
+					axisLabel:{
+						textStyle:{
+							color:'white'
+						}
+					},
+					axisLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+					},
+					axisTick:{
+						show:false
+					},
+				},
+				yAxis: {
+				    type: "value",
+					axisLine:{
+						lineStyle:{
+							color:'white'
+						}
+					},
+					splitLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+						
+					}
+				},
+				series: [
+				    {
+				        type: "line",
+						// showSymbol: false,
+						symbol:'circle',
+						symbolSize:8,
+				        data: [40,18,57,23,42,38],
+						areaStyle: {
+						        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+						          {
+						            offset: 0,
+						            color: 'rgba(65, 96, 233, 0.8)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(222, 225, 233, 0.2)'
+						          }
+						        ])
+						      },
+						lineStyle: {
+						        color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+						          {
+						            offset: 0,
+						            color: 'rgba(71, 22, 194, 1)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(3, 62, 255, 1.0)'
+						          }
+						        ])
+						      },
+				    }
+				    ,{
+				        type: "line",
+						// showSymbol: false,
+						symbol:'circle',
+						symbolSize:8,
+				        data: [50,62,37,87,59,51],
+						areaStyle: {
+						        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+						          {
+						            offset: 0,
+						            color: 'rgba(178, 237, 255, 0.8)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(230, 233, 233, 0.2)'
+						          }
+						        ])
+						      },
+						lineStyle: {
+						        color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+						          {
+						            offset: 0,
+						            color: 'rgba(63, 233, 214, 1)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(12, 33, 165, 1)'
+						          }
+						        ])
+						      },
+							  
+				    }
+				],
+			}
+			demoChart3.setOption(option3)
+		</script>
+		<script>
+				let demoObj4 = document.getElementById("demoChart4")
+				let demoChart4 = echarts.init(demoObj4)
+				let option4= {
+					// title:{
+					// 	text:"任务计算",
+					// 	},
+					length:{
+						data:['数据1','数据2']
+					},
+					  radar: {
+						  splitArea:{
+							  show:true,
+							  areaStyle:{
+								  color:'rgb(13,30,78)'
+							  }
+						  },
+						  splitNumber:2,
+					    // shape: 'circle',
+					    indicator: [
+					      { name: 'A', max: 6500 ,color:'white'},
+					      { name: 'F', max: 16000,color:'white'},
+					      { name: 'E', max: 30000,color:'white'},
+					      { name: 'D', max: 38000,color:'white'},
+					      { name: 'C', max: 52000,color:'white'},
+					      { name: 'B', max: 25000,color:'white'}
+					    ],
+						axisLine:{
+						  lineStyle:{
+							  color:'rgb(47,61,100)'
+						  }
+					  },
+					  splitLine:{
+					  	lineStyle:{
+					  		color:'rgb(47,61,100)'
+					  	}
+					  	
+					  },
+					  },
+					  
+					  series: [
+					    {
+                             							
+					      type: 'radar',
+					      data: [
+					        {
+					          value: [1500, 10000, 15000, 20000, 24000, 12000],
+					          name: '数据1',
+							  symbol: 'none',
+								lineStyle: {
+								        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+								          {
+								            offset: 0,
+								            color: 'rgba(255, 16, 72, 1)'
+								          },
+								          {
+								            offset: 1,
+								            color: 'rgba(233, 214, 1, 1.0)'
+								          }
+								        ])
+										
+								      },
+					        },
+					        {
+					          value: [5000, 14000, 28000, 26000, 42000, 21000],
+					          name: '数据2',
+							  symbol: 'none',
+							 lineStyle: {
+							         color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+							           {
+							             offset: 0,
+							             color: 'rgba(63, 233, 214, 1)'
+							           },
+							           {
+							             offset: 1,
+							             color: 'rgba(96, 130, 255, 1)'
+							           }
+							         ])
+							       },
+					        }
+					      ]
+					    }
+					  ]
+				}
+				demoChart4.setOption(option4)
+		</script>
+		<script>
+				let demoObj5 = document.getElementById("demoChart5")
+				let demoChart5 = echarts.init(demoObj5)
+				let option5= {
+					// title:{
+					// 	text:"任务成功",
+					// 	},
+					series: [
+					    {
+							axisLine:{
+									lineStyle:{
+										color:[[1,'#172957']]
+									}
+								},
+					      type: 'gauge',
+					      startAngle: 90,
+					      endAngle: -270,
+					      pointer: {
+					        show: false
+					      },
+						  
+						splitLine: {
+						          show: false,
+						          distance: 0,
+						          length: 10,
+								  
+						        },
+						axisTick: {
+						        show: false
+						      },
+						      axisLabel: {
+						        show: false,
+						        distance: 50
+						      },	
+						  progress: {
+						          show: true,
+						          overlap: false,
+						          roundCap: true,
+						          clip: false,
+						          // itemStyle: {
+						          //   borderWidth: 1,
+						          //   borderColor: '#464646'
+						          // }
+						        },
+						detail: {
+						        // width: 50,
+						        // height: 14,
+								
+						        fontSize: 30,
+						        color: '#ffffff',
+								
+						        // borderColor: 'auto',
+						        // borderRadius: 20,
+						        // borderWidth: 1,
+						        formatter: '{value}%'
+						      },
+							  
+						data: [
+						        {
+						            value: 65,
+						            detail: {
+						              valueAnimation: true,
+						              offsetCenter: ['0%', '0%']
+						            }
+						          },
+						],
+						
+							itemStyle: {
+					        color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+					          {
+					            offset: 0,
+					            color:   'rgba(63, 233, 214, 1)'
+					          },
+					          {
+					            offset: 1,
+					            color: 'rgba(96, 130, 255, 1)'
+					          }
+					        ])
+					      },
+					
+						}
+					
+				],
+			}
+				demoChart5.setOption(option5)	
+		</script>
+		<script>
+				let demoObj6 = document.getElementById("demoChart6")
+				let demoChart6 = echarts.init(demoObj6)
+				let option6= {
+					// title:{
+					// 	text:"任务成功率",
+					// 	},
+					xAxis: {
+					    type: "category",
+					    data: ["A1", "A2", "A3", "A4","A5","A6","A7","A8"],
+						boundaryGap: false,
+						axisLabel:{
+							textStyle:{
+								color:'white'
+							}
+						},
+						axisLine:{
+							lineStyle:{
+								color:'rgb(23,41,87)'
+							}
+						},
+						axisTick:{
+							show:false
+						},
+						
+					},
+					yAxis: {
+					    type: "value",
+						axisLine:{
+							lineStyle:{
+								color:'white'
+							}
+						},
+						splitLine:{
+							lineStyle:{
+								color:'rgb(23,41,87)'
+							}
+							
+						}
+					},
+					series: [
+					    {
+					        type: "line",
+							showSymbol: false,
+					        data: [20,10,28,31,40,58,79,68],
+					        // smooth: true,
+							areaStyle: {
+							        color: new echarts.graphic.LinearGradient(1, 0, 0,0, [
+							          {
+							            offset: 0,
+							            color: 'rgba(106, 1, 166, 1)'
+							          },
+							          {
+							            offset: 1,
+							            color: 'rgba(9, 66, 252, 1)'
+							          }
+							        ])
+							      },
+					    }
+					    ,{
+					        type: "line",
+							showSymbol: false,
+					        data: [29,41,39,51,60,78,94,78],
+					        // smooth: true,
+							areaStyle: {
+							        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+							          {
+							            offset: 0,
+							            color: 'rgba(1, 230, 233, 1)'
+							          },
+							          {
+							            offset: 1,
+							            color: 'rgba(48, 113, 233,1)'
+							          }
+							        ])
+							      },
+					    }
+					],
+				}
+				demoChart6.setOption(option6)	
+		</script>
+<!-- 		<script>
+			
+			let demoObj7 = document.getElementById("demoChart7")
+				let demoChart7 = echarts.init(demoObj7)
+				let option7= {
+					title:{
+						text:"任务管理",
+						},
+					
+						}	
+				demoChart7.setOption(option7)	
+		</script> -->
+		<script>
+			let demoObj8 = document.getElementById("demoChart8")
+			let demoChart8 = echarts.init(demoObj8)
+			let option8 = {
+				// title:{
+				// 	text:"平均容量",
+				// 	},
+				xAxis: {
+				    type: "category",
+				    data: ["02/03","02/04","02/05","02/06","02/07"],
+					// boundaryGap: false
+					
+					axisLabel:{
+						textStyle:{
+							color:'white'
+						}
+					},
+					axisLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+					},
+					axisTick:{
+						show:false
+					},
+				},
+				yAxis: {
+				    type: "value",
+					axisLine:{
+						lineStyle:{
+							color:'white'
+						}
+					},
+					splitLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+						
+					}
+				},
+				series: [
+				    {
+				        type: "bar",
+						showSymbol: false,
+				        data: [1950,1200, 2100,3533,1870],
+				        lineStyle: {
+				                color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+				                  {
+				                    offset: 0,
+				                    color: 'rgba(96, 130, 255, 0.8)'
+				                  },
+				                  {
+				                    offset: 1,
+				                    color: 'rgba(63, 233, 214, 0.7)'
+				                  }
+				                ])
+				              },
+					
+				    }
+				    ,{
+				        type: "bar",
+				        data: [1750,1100, 1900,3333,1670],
+						itemStyle: {
+						        color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+						          {
+						            offset: 0,
+						            color: 'rgba(96, 130, 255, 0.8)'
+						          },
+						          {
+						            offset: 1,
+						            color: 'rgba(63, 233, 214, 0.7)'
+						          }
+						        ])
+						      },
+				       
+				    }
+				],
+			}
+			demoChart8.setOption(option8)
+		</script>
+		<script>
+			let demoObj9 = document.getElementById("demoChart9")
+			let demoChart9 = echarts.init(demoObj9)
+			let option9 = {
+				// title:{
+				// 	text:"存储容量",
+				// 	},
+				xAxis: {
+				    type: "value",
+					boundaryGap:[0,0.01],
+					axisLine:{
+						lineStyle:{
+							color:'white'
+						}
+					},
+					splitLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+						
+					}
+				},
+				yAxis: {
+				    type: "category",
+					data:['A','B','C','D','E'],
+					
+					axisLabel:{
+						textStyle:{
+							color:'white'
+						}
+					},
+					axisLine:{
+						lineStyle:{
+							color:'rgb(23,41,87)'
+						}
+					},
+					axisTick:{
+						show:false
+					},
+				},
+				series: [
+				    {
+				        type: "bar",
+						showSymbol: false,
+				        data: [38,78, 116,42,17],
+				        itemStyle: {
+				                color: new echarts.graphic.LinearGradient(1,0, 0,0, [
+				                  {
+				                    offset: 0,
+				                    color: 'rgba(63, 233, 214, 0.7)'
+				                  },
+				                  {
+				                    offset: 1,
+				                    color: 'rgba(96, 130, 255, 0.8)'
+				                  }
+				                ])
+				              },
+					
+				    }
+				],
+			}
+			demoChart9.setOption(option9)
+		</script>
+		<script>
+				let demoObj10 = document.getElementById("demoChart10")
+				let demoChart10 = echarts.init(demoObj10)
+				let option10= {
+					// title:{
+					// 	text:"CPU利用率",
+					// 	},
+					series: [
+					    {
+						axisLine:{
+								lineStyle:{
+									color:[[1,'#172957']]
+								}
+							},
+					      type: 'gauge',
+					      startAngle: 90,
+					      endAngle: -270,
+					      pointer: {
+					        show: false
+					      },
+						  
+						splitLine: {
+						          show: false,
+						          distance: 0,
+						          length: 10,
+								  
+						        },
+								
+						axisTick: {
+						        show: false
+						      },
+						      axisLabel: {
+						        show: false,
+						        distance: 50,
+								
+						      },	
+						  progress: {
+						          show: true
+						        },
+						detail: {
+						        // width: 50,
+						        // height: 14,
+								
+						        fontSize: 30,
+						        color: '#ffffff',
+						        // borderColor: 'auto',
+						        // borderRadius: 20,
+						        // borderWidth: 1,
+						        formatter: '{value}%'
+						      },
+						progress: {
+						        show: true,
+						        overlap: false,
+						        roundCap: true,
+						        clip: false,
+						        // itemStyle: {
+						        //   borderWidth: 1,
+						        //   borderColor: '#464646'
+						        // }
+						      },
+								
+						data: [
+						        {
+						            value: 80,
+						            detail: {
+						              valueAnimation: true,
+						              offsetCenter: ['0%', '0%']
+						            }
+						          },
+						],
+						itemStyle: {
+						  color: new echarts.graphic.LinearGradient(0,0, 0, 1, [
+						    {
+						      offset: 0,
+						      color:   'rgba(63, 233, 214, 1)'
+						    },
+						    {
+						      offset: 1,
+						      color: 'rgba(96, 130, 255, 1)'
+						    }
+						  ])
+						},
+						}
+					
+				],
+			}
+				demoChart10.setOption(option10)	
+		</script>
+		<script>
+			let demoObj11 = document.getElementById("demoChart11")
+			let demoChart11 = echarts.init(demoObj11)
+			let option11 = {
+				// title:{
+				// 	text:"任务总量",
+				// 	},
+			xAxis: {
+			    type: "category",
+			    data: ["2016-Q4", "2017-Q1", "2017-Q2", "2017-Q3"],
+				boundaryGap: false,
+				axisLabel:{
+					textStyle:{
+						color:'white'
+					}
+				},
+				axisLine:{
+					lineStyle:{
+						color:'rgb(23,41,87)'
+					}
+				},
+				axisTick:{
+					show:false
+				},
+				
+			},
+			yAxis: {
+			    type: "value",
+				axisLine:{
+					lineStyle:{
+						color:'white'
+					}
+				},
+				splitLine:{
+					lineStyle:{
+						color:'rgb(23,41,87)'
+					}
+					
+				}
+			},
+			series: [
+			    {
+			        type: "line",
+					showSymbol: false,
+			        data: [53,59, 120, 50],
+			        smooth: true,
+					areaStyle: {
+					        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+					          {
+					            offset: 0,
+					            color: 'rgba(65, 96, 233, 0.8)'
+					          },
+					          {
+					            offset: 1,
+					            color: 'rgba(222, 225, 233, 0)'
+					          }
+					        ])
+					      },
+			    }
+			    ,{
+			        type: "line",
+					showSymbol: false,
+			        data: [99, 13, 53, 80],
+			        smooth: true,
+					areaStyle: {
+					        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+					          {
+					            offset: 0,
+					            color: 'rgba(1, 230, 233, 0.8)'
+					          },
+					          {
+					            offset: 1,
+					            color: 'rgba(230, 233, 233, 0)'
+					          }
+					        ])
+					      },
+			    }
+			],
+			}
+			demoChart11.setOption(option11)
+		</script>
+	
+	</body>
+</html>
+ 
